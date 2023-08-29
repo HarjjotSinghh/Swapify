@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "frontend": "cd ./frontend/swapify && npx next dev",
+    "backend": "cd ./backend && node Backend.js",
+    "start": "concurrently \"npm run frontend \" \"npm run backend\" "
   },
   "author": "",
   "license": "ISC",
